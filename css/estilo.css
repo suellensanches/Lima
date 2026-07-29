@@ -1,0 +1,53 @@
+
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: rgb(247, 94, 222);
+    color: violet;
+    margin: 0;
+    padding: 20px;
+}
+
+h1{
+    text-align: center;
+    font-size: 38px;
+    color: rgb(241, 14, 173);
+}
+
+p{
+    text-align: center;
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 10px 0;
+    
+}
+
+.lorem{
+    color: rgb(226, 96, 235);
+}
+
+p.lorem{
+    text-align: justify;
+}
+
+#ultimoparagrafo{
+    text-align: justify;
+}
+.conteudo{
+    width: 50%;
+    height: auto;
+}
+
+button:hover{
+    color: deeppink;
+    background-color: black;
+}
+
+#imagem:hover{
+    transition: transform 0.10s ease, opacity 0.10 ease; /*Trasição suave*/
+    width: 200px;   
+}
+
+#imagem{
+    transform: scale(1.1); /*Aumenta em 10%*/
+
+}

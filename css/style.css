@@ -1,0 +1,44 @@
+* {
+    margin: 0; /*Remove as margens padrão de todos os elementos*/
+    padding: 0; /*Remove o preenchimento padrão de todos os elementos*/
+    box-sizing: border-box; /*Garante que o padding e a borda sejam incluídos no
+                            tamanho dos elementos*/
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: lemonchiffon;
+    display: flex; /*Utiliza o modelo de leiaute flexbax para o corpo do documento*/
+    justify-content: center; /*Centraliza os elementos horizontalmente*/
+    align-items: center; /*Centraliza os elementos verticalmente*/
+    height: 100vh; /*vh = altura do viewport*/ 
+                    /* Define a altura do corpo como 100% da altura da janela de
+                    visualização (viewport)*/
+}
+
+.card-container{
+    display: flex; /*Utiliza o modelo de leiaute flex box para os itens dentro
+                    do container*/
+    justify-content: space-around; /*Distribui os cartões com espaço igual entre eles*/
+    gap: 20px; /*Adiciona um espaçamento de 20px entre os cartões*/
+    flex-wrap: wrap; /*Permite que os cartões quebrem a linha quando não couberem na 
+                        largura disponível*/
+    padding: 20px; /*Adiciona um preenchimento de 20px ao redor do conteiner*/
+}
+
+.card{
+    background-color: antiquewhite;
+    width: 300px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /*Aplica uma transição suave para o efeito 
+                                                            de transformação de sombra*/
+}
+
+.card:hover{
+    transform: translateY(-10px); /*Movimenta o cartão para cima em 10px ao passar o
+                                    mouse sobre ele, criando um efeito de elevador*/
+    box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.15); /*Aumenta a intensidade da sobra ao
+                                                    passar o mouse sobre o cartão*/
+}
