@@ -1,0 +1,35 @@
+body{
+    background-color: lightseagreen;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 20px;
+}
+
+#nome{
+    background-color: lightblue;
+}
+#email{
+    background-color: lightblue;
+}
+#telefone{
+    background-color: lightblue;
+}
+#Idade{
+    background-color: lightblue;
+}
+#data-nascimento{
+    background-color: lightblue;
+}
+#website{
+    background-color: lightblue;
+}
+#comentarios{
+    background-color: lightblue;
+}
+
+button{
+    padding: 10px 20px;
+    background-color: lightblue;
+    color: aliceblue;
+    border: none;
+    border-radius: 5px;
+}

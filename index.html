@@ -1,6 +1,7 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-<head>
+<html lang="pt-br"> <!--Declara que esse trecho do arquivo representa código HTML-->
+<head> <!--Declara metainformações sobre a página-->
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content=" Um guia completo sobre HTML e suas tags.">
@@ -17,11 +18,116 @@
     <script defer src="./script.js"></script>
 
     <title>Meu primeiro HTML</HTML></title>
+
 </head>
+</body>
+
     <h1 style="font-family: Griffy, sans-serif;">Bem-vindo ao site!</h1>
+    <h2>É um site muito legal!</h2>
+
     <p>Este é um exemplo de uma página definda o português do Brasil.</p>
     <p id="paragrafo">Onde está o sol??</p>
     <button id="botao">Clique aqui</button>
+
+    <p>
+        Um anjo do céu <br>
+        Que trouxe pra mim <br>
+        É a mais bonita <br>
+        A joia perfeita <br>
+    </p>
+    <P>
+        Que é pra eu cuidar <br>
+        Que é pra eu amar <br>
+        Gota cristalina <br>
+        Tem toda inocência <br>
+    </P>
+
+    <h2>Minha lista de compras</h2>
+    <ul type="square"><!--Lista não ordenada, usada para itens sem ordem específica -->
+        <!-- Cada item da lista é definido pela tag <li> -->
+            <li>Maçã</li>
+            <li>Pão</li>
+            <li>Leite</li>
+
+    </ul>
+
+
+    <ul type="disc">
+        <li>Item com marcador padão (disc)</li>
+    </ul>
+
+
+    <ul type="Circle">
+        <li>Item com marcador de círculo vazio (Circle)</li>
+    </ul>
+
+
+    <ul type="square">
+        <Li>Item com marcador quadrado cheio (Square)</Li>
+    </ul>
+
+    <h2>Passos para Ligar um Computador</h2>
+    <ol><!--Lista ordenada com os passos simples para ligar um computador-->
+        <!--Cada item é definido pela tag <li> -->
+            <li>Verificar se o cabo de alimentação está conectado na tomada.</li>
+            <Li>Certificar-se de que o cabo de alimentação está conectado no computador.</Li>
+            <Li>Pressionar o botão de ligar.</Li>
+            <li>Aguardar até a tela de inicializaçãp apareça.</li>
+    </ol>
+
+
+    <ol start="5" reversed type="i">
+        <li style="color:skyblue">Item 5</li>
+        <li>Item 6</li>
+        <Li>Item 7</Li>
+    </ol>
+
+    <p>
+        <a href="https://www.google.com"
+            target="_blank"
+            title="Faça buscas na Internet"
+            rel="nofollow noopener"
+        >
+            Visite o Google
+        </a>
+    </p>
+
+    <p>
+        <a href="https://sp.senai.br" 
+            target="_blank" 
+            title="Consulte nossos cursos"
+        >
+            Acesse o portal SENAI
+        </a>
+    </p>
+
+    <a href="https://wallpapercave.com/minions-wallpaper">
+        <img 
+            src="https://tse1.mm.bing.net/th/id/OIP.Mafc9BwGd-6fRSTTYDNlwQHaEo?r=0&w=474&h=215&rs=1&pid=ImgDetMain&o=7&rm=3" 
+            alt="Minion sorrindo"
+            title="Minion sorrindo"
+            >
+        </a>
+    
+    <table border="4" cellspacing="6" cellpadding="10" width="50%" align="center"> <!--Elemento tabela-->
+        <tr> <!--Elemento Linha da tabela (table row)-->
+            <th>Nome</th> <!--Nome das colunas-->
+            <th>Idade</th>
+            <th>Cidade</th>
+        </tr>
+        <tr>
+            <td>Suellen</td>
+            <td>17 Anos</td>
+            <td>São Paulo</td>
+        </tr>
+
+        <tr>
+            <td>Ana</td>
+            <td>16 Anos</td>
+            <td>São Paulo</td>
+        </tr>
+
+    </table>
 
 </main>
 
