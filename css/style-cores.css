@@ -1,0 +1,56 @@
+/*Eslo Global*/
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: cadetblue;
+    margin: 0;
+    padding: 0;
+}
+
+/*Cabeçaljo do site*/
+.site-header{
+    background-color: rgb(109, 219, 183);
+    color: rgb(89, 129, 167);
+    text-align: center;
+    padding: 20px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+/*Destaque*/
+.highlight{
+    background-color: rgb(67, 67, 181);
+    color: cornflowerblue;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 8px;
+}
+
+/*Informações*/
+.info{
+    background-color: darkcyan;
+    color: deepskyblue;
+    padding: 20px;
+    margin: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0);
+}
+
+.link{
+    color: cyan;
+    text-decoration: none;
+    font-weight: bold; /*Define o texto como negrito (bold)*/
+}
+
+.link:hover{
+    color: darkblue;
+}
+
+.site-footer{
+    background-color: rgb(86, 146, 183);
+    color: lightsteelblue;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+}
