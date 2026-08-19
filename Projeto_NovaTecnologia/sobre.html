@@ -3,20 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sobre - Nova Tecnologia Informática</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
-    <script defer src="js/menu.js"></script>
+    <link rel="stylesheet" href="css/contato.css">
+    <link rel="icon" href="./images/logo.png" type="image/png">
+    <script defer src="js/menus.js"></script>
+    <title>Sobre - Nova Tecnologia Informática</title>
 </head>
 <body>
     <!--Cabeçalho-->
     <header role="banner">
-        <nav role="navigation" aria-label="Menu Perincipal">
-             <div class="logo">
-                <img src="images/logo.png" alt="Loga da Empresa Nova Técnologia Informática">
-            </div>
-            <div class="nome">
-                <h1>Nova Técnologia Informática</h1>
+         <nav aria-label="Menu de Navegação principal">
+                <div class="logo">
+                    <img src="images/logo.png" alt="logo da Empresa Nova Técnologia Informática">
+                </div>
+                <div class="nome">
+                    <h1>Nova Técnologia Informática</h1>
             </div>
             <button id="menu-toggle" class="menu-toggle" aria-label="Abrir Menu">&#8801</button>
             <ul id="menu" class="menu" role="navigation" aria-labelledby="menu-toggle">
@@ -25,55 +27,67 @@
                 <li><a href="servicos.html" tabindex="0">Serviços</a></li>
                 <li><a href="contato.html" tabindex="0">Contato</a></li>
             </ul>
-        </nav>
+        </nav> 
     </header>
-    <!--Sobre a empresa-->
-    <main role="main">
-        <section class="sobre" aria-labelledby="Sobre-head">
-            <div class="container">
-                <section class="content">
-                    <div class="content-list">
+    
+        <!--Sobre a empresa-->
+        <main role="main">
+            <section class="sobre" aria-labelledby="sobre-head">
+                <div class="container">
+                    <section class="content">
+                        <div class="content-list">
                         <div class="content-item">
                             <h2 id="sobre-head">Quem Somos</h2>
-                            <P>
-                                A Nova Tecnologia Informática é uma empresa inovadora focada em soluções tecnologicas personalizadas. Com uma equipe especializada, oferecemos serviços como desenvolvimento de software, consultoria e infraestrutura de TI.
-                            </P>
+                            <p>
+                                A Nova Tecnologia é uma empresa inovadora focada em soluções tecnológicas personalizadas. Com uma equipe especializada, oferecemos serviços como desenvolvimento de software, consultoria e Insfraestruturade TI.
+                            </p>
                         </div>
                         <div class="content-item">
                             <h2 id="sobre-head">Nossa Missão</h2>
-                            <P>
-                                Fornecer soluções tecnologicas eficientes e inovadoras para empresas de todos os portes, garantindo excelência e confiabilidade.
-                            </P>
+                            <p>
+                                Fornecer soluções tecnológicas eficientes e inovadoras para empresas de todos os portes, garantindo excelência e confiabilidade
+                            </p>
                         </div>
                         <div class="content-item">
                             <h2 id="sobre-head">Visão</h2>
-                            <P>
+                            <p>
                                 Ser referência no mercado de tecnologia, destacando-se pela inovação e atendimento personalizado.
-                            </P>
-                        </div>
+                            </p>
+                        </div> 
                         <div class="content-item">
                             <h2 id="sobre-head">Valores</h2>
                             <ul>
-                                <li>Compromisso com a qualidade</li>
-                                <li>Etica e tranparência</li>
-                                <li>Inovação Constante</li>
-                                <li>Foco no cliente</li>
+                                <li>Compromisso com a qualidade.</li>
+                                <li>Ética e transparência.</li>
+                                <li>Inovação Constante.</li>
+                                <li>Foco no Cliente.</li>
                             </ul>
                         </div>
                         <div class="content-item">
-                                <img src="imagens/visao.jpg" alt="Imagem representando a visão da empresa">
-                        </div>
-                    </div>
-                </section>
-            </div>
-        </section>
-        <footer>
-        <p><nav>Nova tecnologia Informática | Todos os direitos redervados</nav></p>
-        <p><strong>Endereço :</strong> <a>Rua Alam Turing, 123, Bairro Eniac, Cidade das Maquinas</a></p>
-        <p><strong>Telefone: <a>href="tel: +55999999999">(99)99999-9999</a> <p>
-        <p><strong>Email: </strong> <a> href="mailto:contato@novatecinfo.com">contato@novacinfo.com</a></p>
-        <p><strong>Hórario de funcionamento:</strong>Segunda a sexta 8h - 18h | Sábado: 9h - 14h</p>
-    </footer>
-    </main>
+                            <img src="images/visao.jpg" alt="Imagem representando a visão da empresa">
+                        </div> 
+                      </div>
+                    </section>
+                </div>
+            </section>
+        </main>
+        <!--Rodapé-->
+        <footer role="contentinfo">
+            <p>&copy; Nova Tecnologia Informática | Todos os direitos reservados.
+
+            </p>
+            <p><strong>Endereço:</strong>
+                3518 Spring Drive Madison, NY 28219
+            </p>
+            <p><strong>Telefone:</strong>
+                <a href="tel:+5599999999"> (55) 5196284424</a>
+            </p>
+            <p><strong>Email:</strong>
+                <a href="mailto:contato@novatecinfo.com">NovaTecIf@gmail.com</a>
+            </p>
+            <p><strong>Horário de Funcionamento:</strong>
+                Segunda a Sexta: 8h-18h | Sábado: 9h - 14h
+            </p>
+        </footer>
 </body>
 </html>

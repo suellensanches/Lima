@@ -4,20 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Serviços - Nova Tecnologia Informática</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/servicos.css">
-    <script defer src="js/menu.js"></script>
-
+    <link rel="stylesheet" href="css/servicos.css"> 
+    <link rel="icon" href="./images/logo.png" type="image/png">
+    <script defer src="js/menus.js"></script>
 </head>
 <body>
-    <header>
-        <nav role="navigation" aria-label="Menu Perincipal">
-             <div class="logo">
-                <img src="images/logo.png" alt="Loga da Empresa Nova Técnologia Informática">
-            </div>
-            <div class="nome">
-                <h1>Nova Técnologia Informática</h1>
+    <!--Cabeçalho-->
+    <header role="banner">
+         <nav aria-label="Menu de Navegação principal">
+                <div class="logo">
+                    <img src="images/logo.png" alt="logo da Empresa Nova Técnologia Informática">
+                </div>
+                <div class="nome">
+                    <h1>Nova Técnologia Informática</h1>
             </div>
             <button id="menu-toggle" class="menu-toggle" aria-label="Abrir Menu">&#8801</button>
             <ul id="menu" class="menu" role="navigation" aria-labelledby="menu-toggle">
@@ -26,55 +27,60 @@
                 <li><a href="servicos.html" tabindex="0">Serviços</a></li>
                 <li><a href="contato.html" tabindex="0">Contato</a></li>
             </ul>
-        </nav>
+        </nav> 
     </header>
-<!--Serviços-->
+    <!--Serviços-->
     <main>
         <section class="content" role="region" aria-labelledby="servicos-heading">
             <h2 id="servicos-heading">Nossos Serviços</h2>
-            <div class="servicos.container">
+            <div class="servicos-container">
                 <div class="servico" role="article">
-                    <img src="imagens/desenvolvimento.jpg" alt="Desenvolvimento de software">
-                    <h3>Desenvolvimento de software</h3>
-                    <P>
+                    <img src="images/desenvolvimento.jpg" alt="Desenvolvimento de Software">
+                    <h3>Desenvolvimento de Software</h3>
+                    <p>
                         Criação de sistemas personalizados para otimizar e automatizar os processos dos seus negócios.
-                    </P>
+                    </p>
                 </div>
-
                 <div class="servico" role="article">
-                    <img src="imagens/consultoria.jpg" alt="Consultoria em TI">
+                    <img src="images/consultoria.jpg" alt="Consultoria em TI">
                     <h3>Consultoria em TI</h3>
-                    <P>
-                        Auxilismos empresas a adotarem as melhores práticas tecnologicas para impulsionar seus negocios.
-                    </P>
+                    <p>
+                        Auxiliamos empresas a adotarem as  melhores práticas tecnológicas para impulsionar seus negócios.
+                    </p>
                 </div>
-
                 <div class="servico" role="article">
-                    <img src="imagens/infraestrutura.jpg" alt="Infraestrutura em TI">
-                    <h3>Infraestrutura em TI</h3>
-                    <P>
-                        Implementação e manutenção de servidores, redes e soluções de armazenamento seguros e confiáveis.
-                    </P>
+                    <img src="images/Infraestrutura.jpg" alt="Infraestrutura de TI">
+                    <h3>Infraestrutura de TI</h3>
+                    <p>
+                        Implementação e manutenção de servidores, redes e soluções de armazenamento seguras e confiáveis.
+                    </p>
                 </div>
-
                 <div class="servico" role="article">
-                    <img src="imagens/suporte.jpg" alt="Suporte Técnico">
+                    <img src="images/Suporte.jpg" alt="Suporte Técnico">
                     <h3>Suporte Técnico</h3>
-                    <P>
+                    <p>
                         Serviço especializado para garantir o funcionamento contínuo do seu ambiente tecnológico.
-                    </P>
+                    </p>
                 </div>
             </div>
         </section>
     </main>
-<!--Rodapé-->
-    <footer>
-        <p><nav>Nova tecnologia Informática | Todos os direitos redervados</nav></p>
-        <p><strong>Endereço :</strong> <a>Rua Alam Turing, 123, Bairro Eniac, Cidade das Maquinas</a></p>
-        <p><strong>Telefone: <a>href="tel: +55999999999">(99)99999-9999</a> <p>
-        <p><strong>Email: </strong> <a> href="mailto:contato@novatecinfo.com">contato@novacinfo.com</a></p>
-        <p><strong>Hórario de funcionamento:</strong>Segunda a sexta 8h - 18h | Sábado: 9h - 14h</p>
-    </footer>
+    <footer role="contentinfo">
+            <p>&copy; Nova Tecnologia Informática | Todos os direitos reservados.
 
+            </p>
+            <p><strong>Endereço:</strong>
+                3518 Spring Drive Madison, NY 28219
+            </p>
+            <p><strong>Telefone:</strong>
+                <a href="tel:+5599999999"> (55) 5196284424</a>
+            </p>
+            <p><strong>Email:</strong>
+                <a href="mailto:contato@novatecinfo.com">NovaTecIf@gmail.com</a>
+            </p>
+            <p><strong>Horário de Funcionamento:</strong>
+                Segunda a Sexta: 8h-18h | Sábado: 9h - 14h
+            </p>
+    </footer>
 </body>
 </html>

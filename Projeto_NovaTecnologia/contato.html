@@ -3,20 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contato - Nova Tecnologia Informática</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/contatos.css">
-    <script defer src="js/menu.js"></script>
+    <link rel="stylesheet" href="css/contato.css">
+    <link rel="icon" href="./images/logo.png" type="image/png">
+    <script defer src="js/menus.js"></script>
+    <title>Contato - Nova Tecnologia Informática
+    </title>
 </head>
 <body>
-     <header>
-        <nav role="navigation" aria-label="Menu Perincipal">
-             <div class="logo">
-                <img src="images/logo.png" alt="Loga da Empresa Nova Técnologia Informática">
-            </div>
-            <div class="nome">
-                <h1>Nova Técnologia Informática</h1>
+    <!--Cabeçalho-->
+    <header role="banner">
+         <nav aria-label="Menu de Navegação principal">
+                <div class="logo">
+                    <img src="images/logo.png" alt="logo da Empresa Nova Técnologia Informática">
+                </div>
+                <div class="nome">
+                    <h1>Nova Técnologia Informática</h1>
             </div>
             <button id="menu-toggle" class="menu-toggle" aria-label="Abrir Menu">&#8801</button>
             <ul id="menu" class="menu" role="navigation" aria-labelledby="menu-toggle">
@@ -25,53 +28,74 @@
                 <li><a href="servicos.html" tabindex="0">Serviços</a></li>
                 <li><a href="contato.html" tabindex="0">Contato</a></li>
             </ul>
-        </nav>
-    </header >
-
+        </nav> 
+    </header>
     <main>
         <section class="content" role="form" aria-labelledby="contato-form">
-            <h2 id="contato.form">Entre em contato</h2>
-            <p>Preencha o formulário abaixo ou entre em contato por telefone ou e-mail.</p>
+            <h2 id="contato-for">Entre em contato </h2>
+            <p>
+                Preencha esse formulário abaixo ou entre em contato por telefone ou e-mail. 
+            </p>
             <form class="contact-form" aria-describedby="formulario-contato-desc">
                 <div class="form-group">
-                    <label for="nome">Nome</label>
-                    <input type="text" id="nome" name="nome" placeholder="Digite seu nome completo" >
-                    <span id="nome-ajuda" class="sr-only">Por favor, insira seu nome completo</span>
-                </div>
-                 <div class="form-group">
-                    <label for="nome">E-mail</label>
-                    <input type="text" id="email" name="email" placeholder="Digite seu e-mail" >
-                    <span id="email-ajuda" class="sr-only">Digite um email válido</span>
+                    <label for="name">Nome:</label>
+                    <input 
+                        type="text" id="nome" name="nome" placeholder="Digite seu nome completo"
+                        required aria-required="true" aria-describedby="nome-ajuda" tabindex="-1">
+                        <span id="nome-ajuda" class="sr-only"> Por Favor, insira seu nome completo.</span> 
                 </div>
                 <div class="form-group">
-                    <label for="nome">Telefone</label>
-                    <input type="text" id="telefone" name="telefone" placeholder="(99) 99999-9999" required aria-required="true" aria-describedby="telefone-ajuda" tabindex="0">
-                    <span id="telefone-ajuda" class="sr-only">Insira seu telefone no formato (99) 99999-9999</span>
+                    <label for="e-mail">E-mail:</label>
+                    <input 
+                        type="email" id="email" name="email" placeholder="exemplo@gmail.com"
+                        required aria-required="true" aria-describedby="email-ajuda" tabindex="-1">
+                        <span id="email-ajuda" class="sr-only">Digite um Email Válido.</span> 
                 </div>
                 <div class="form-group">
-                    <label for="assunto">assunto</label>                   
-                        <select id="assunto" name="assunto" required  aria-required="true" tabindex="0">
-                            <option value="selecione um assunto"></option>
-                            <option value="suporte">suporte tecnico</option>
-                            <option value="desenvolvimento">desenvolvimento de software</option>
-                            <option value="consultoria">consultoria de ti</option>
-                            <option value="infraestrutura">infraestrutura de ti</option>
-                            <option value="orçamento">orçamento</option>
-                            <option value="duvida">duvidas gerais</option>
+                    <label for="telefone">Telefone:</label>
+                    <input 
+                        type="tel" id="telefone" name="telefone" placeholder="(99) 9999-9999"
+                        required aria-required="true" aria-describedby="telefone-ajuda" tabindex="-1">
+                        <span id="telefone-ajuda" class="sr-only"> Insira seu telefone no formato (99) 9999-9999;</span> 
+                </div>
+                <div class="form-group">
+                    <label for="assunto">Assunto</label>
+                   <select id="assunto" name="assunto" required aria-required="true"
+                            aria-describedby="telefone-ajuda" tabindex="-1">
+                        <option value="suporte">Suporte Técnico</option>
+                        <option value="desenvolvimento">Desenvolvimento de Software</option>
+                        <option value="consultoria"> Consultoria de TI</option>
+                        <option value="infraestrutura"> Infraestrutura de TI</option>
+                        <option value="orcamento"> Orçamento </option>
+                        <option value="duvidas"> Dúvidas Gerais</option>
                         </select>
                 </div>
-                <div>
-                    <label for="mensagem">mensagem</label>
+                <div class="form-group">
+                    <label for="mensagem">Mensagem</label>
+                    <textarea id="mensagem" name="mensagem" placeholder="Escreve sua mensagem" required aria-required="true"
+                                aria-describedby="mensagem-ajuda" tabindex="0"></textarea>
+                    <span id="mensagem-ajuda" class="sr-only">Descreva sua dúvida ou solicitação.</span>
                 </div>
+                <button type="submit" class="btn-submit" aria-label="Enviar Mensagem">Enviar mensagem</button>
+            </form>
         </section>
     </main>
-    <!--Rodapé-->
-    <footer>
-        <p><nav>Nova tecnologia Informática | Todos os direitos redervados</nav></p>
-        <p><strong>Endereço :</strong> <a>Rua Alam Turing, 123, Bairro Eniac, Cidade das Maquinas</a></p>
-        <p><strong>Telefone: <a>href="tel: +55999999999">(99)99999-9999</a> <p>
-        <p><strong>Email: </strong> <a> href="mailto:contato@novatecinfo.com">contato@novacinfo.com</a></p>
-        <p><strong>Hórario de funcionamento:</strong>Segunda a sexta 8h - 18h | Sábado: 9h - 14h</p>
+    <footer role="contentinfo">
+        <p>&copy; Nova Tecnologia Informática | Todos os direitos reservados.
+
+        </p>
+        <p><strong>Endereço:</strong>
+                3518 Spring Drive Madison, NY 28219
+        </p>
+        <p><strong>Telefone:</strong>
+                <a href="tel:+5599999999"> (55) 5196284424</a>
+        </p>
+        <p><strong>Email:</strong>
+            <a href="mailto:contato@novatecinfo.com">NovaTecIf@gmail.com</a>
+        </p>
+        <p><strong>Horário de Funcionamento:</strong>
+            Segunda a Sexta: 8h-18h | Sábado: 9h - 14h
+        </p>
     </footer>
 </body>
 </html>
